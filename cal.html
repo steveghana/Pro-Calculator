@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+  <div class="container">
+      <p class="ansbox" id="Answerbox"></p>
+      <p class="numbox screen" id="calcScreen">0</p>
+
+      <div id="mainscreen">
+       <div class="Row"> 
+          <input type="button" value="+" data-action="Add"   class="operators">
+          <input type="button" value="7" id="Number" class="numbers">
+          <input type="button" value="4" id="Number" class="numbers">
+          <input type="button" value="1" id="Number" class="numbers">
+          <input type="button" value="0" id="Number" class="numbers">
+      </div>
+      <div class="Row">
+          <input type="button" value="-" data-action="Subtract"  class="operators">
+          <input type="button" value="8" id="Number" class="numbers">
+          <input type="button" value="5" id="Number" class="numbers">
+          <input type="button" value="2" id="Number" class="numbers">
+          <input type="button" value="." id="Number" data-action="decimal" class="numbers">
+      </div>
+      <div class="Row">
+          <input type="button" value="x" data-action="Multiply" id="x"  class="operators">
+          <input type="button" value="9" id="Number" class="numbers">
+          <input type="button" value="6" id="Number" class="numbers">
+          <input type="button" value="3" id="Number" class="numbers">
+          <input type="button" value="C" id="clear" data-action="Clear" class="numbers">
+      </div>
+      <div class="Row2 ">
+          <input type="button" value="/" data-action="Division" class="operators">
+          <input type="button" value="AC" data-action="restart" id="restart" class="clear">
+          <input type="button" value="=" id="Equalto" data-action="Calculate" class="resolve">
+      </div>
+  </div>  
+</div>
+<script src="cal2.js" defer></script>
+
+</body>
+</html>

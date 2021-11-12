@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex; 
+    justify-content: space-around;
+    font-family: 'Poppins';
+}
+.container{
+    margin-top: 25px;
+    border: 1px solid rgb(146, 132, 132);
+    width: auto;
+height: 95vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+border-radius: 10px;
+box-shadow: none;
+overflow: hidden; 
+
+}
+.numbox{
+    /* height: 27%; */
+    width: 100%;
+    border: 1px solid rgb(243, 238, 238);
+font-size: 2.5rem;
+/* display: flex; */
+white-space: inherit;
+text-align: right;
+/* margin-right: 20px; */
+    text-overflow: ellipsis; 
+    white-space: wrap;
+padding: 18px;
+/* margin-left: auto; */
+}
+.numbox{
+    max-width: 20ch;
+}
+.ansbox{
+    height: 100%;
+    display: flex;
+    font-size: 19px;
+    /* text-align: right; */
+    /* margin-top:auto; */
+justify-content: flex-end;
+align-items: center;
+    /* margin: 0; */
+padding-right: 20px;
+border: 1px solid rgb(243, 238, 238);
+}
+.Row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.numbers, .clear {
+    padding: 0 2rem;
+font-size: 5rem;
+margin: 0.7px;
+
+}
+.clear{
+    /* margin: 0.7px; */
+    padding: 0 1rem;
+
+}
+.numbers:hover{
+    color: white;
+    background-color: teal;
+}
+.clear:hover{
+    color: white;
+    background-color: teal;
+}
+.operators, .clear{
+    /* padding: 15px 34px; */
+font-size: 5em;
+margin: 0.7px;
+
+}
+.operators:hover{
+    background-color: violet;
+}
+#mainscreen{
+    display: flex;
+flex-direction: row;
+height: auto;
+width: auto;
+}
+
+#Equalto{
+    /* display: flex; */
+/* flex-grow:1 ; */
+/* align-self: center; */
+    background-color: rgb(107, 107, 226);
+color: #fff;
+/* padding: 0 100%; */
+width: 100%;
+height: 100%;
+text-align: center;
+}
+.Row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.division{
+    /* padding: 20px 22px; */
+    font-size: 2em;
+margin-top: 5px;
+}
