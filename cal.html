@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="cal.css">
-</head>
-<body>
-  <div class="container">
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc_header">Calculator</div>
       <p class="ansbox" id="Answerbox"></p>
       <p class="numbox screen" id="calcScreen">0</p>
 
       <div id="mainscreen">
-       <div class="Row"> 
-          <input type="button" value="+" data-action="Add"   class="operators">
-          <input type="button" value="7" id="Number" class="numbers">
-          <input type="button" value="4" id="Number" class="numbers">
-          <input type="button" value="1" id="Number" class="numbers">
-          <input type="button" value="0" id="Number" class="numbers">
+        <div class="Row">
+          <span data-action="Add" class="operators"><i>+</i> </span>
+          <span class="numbers"><i>7</i></span>
+          <span class="numbers"><i>4</i></span>
+          <span class="numbers"><i>1</i></span>
+          <span class="numbers"><i>0</i></span>
+        </div>
+        <div class="Row">
+          <span data-action="Subtract" class="operators"><i>-</i></span>
+          <span id="Number" class="numbers"><i>8</i></span>
+          <span id="Number" class="numbers"><i>5</i></span>
+          <span id="Number" class="numbers"><i>2</i></span>
+          <span id="Number" data-action="decimal" class="numbers"
+            ><i>.</i>
+          </span>
+        </div>
+        <div class="Row">
+          <span data-action="Multiply" id="x" class="operators"><i>x</i></span>
+          <span id="Number" class="numbers"><i>9</i></span>
+          <span id="Number" class="numbers"><i>6</i></span>
+          <span id="Number" class="numbers"><i>3</i></span>
+          <span id="clear" data-action="Clear" class="numbers"><i>C</i></span>
+        </div>
+        <div class="Row2">
+          <span data-action="Division" class="operators"><i>/</i> </span>
+          <span data-action="restart" id="restart" class="clear"
+            ><i>AC</i></span
+          >
+          <span id="Equalto" data-action="Calculate" class="resolve"
+            ><i>=</i></span
+          >
+        </div>
       </div>
-      <div class="Row">
-          <input type="button" value="-" data-action="Subtract"  class="operators">
-          <input type="button" value="8" id="Number" class="numbers">
-          <input type="button" value="5" id="Number" class="numbers">
-          <input type="button" value="2" id="Number" class="numbers">
-          <input type="button" value="." id="Number" data-action="decimal" class="numbers">
-      </div>
-      <div class="Row">
-          <input type="button" value="x" data-action="Multiply" id="x"  class="operators">
-          <input type="button" value="9" id="Number" class="numbers">
-          <input type="button" value="6" id="Number" class="numbers">
-          <input type="button" value="3" id="Number" class="numbers">
-          <input type="button" value="C" id="clear" data-action="Clear" class="numbers">
-      </div>
-      <div class="Row2 ">
-          <input type="button" value="/" data-action="Division" class="operators">
-          <input type="button" value="AC" data-action="restart" id="restart" class="clear">
-          <input type="button" value="=" id="Equalto" data-action="Calculate" class="resolve">
-      </div>
-  </div>  
-</div>
-<script src="cal2.js" defer></script>
-
-</body>
+    </div>
+    <script src="cal2.js" defer></script>
+  </body>
 </html>
